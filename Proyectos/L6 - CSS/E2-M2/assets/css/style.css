@@ -1,0 +1,128 @@
+/* Reset universal */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base escalable: 1rem = 16px (por defecto) */
+html {
+    font-size: 16px; 
+}
+
+/* Estilos generales Mobile First */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1rem;
+}
+.container {
+    max-width: 75rem; /* 1200px max, escalable con rem */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.container section {
+      margin: 1rem 0;
+}
+#header-principal {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700; /* Negrita [25] */
+}
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+.hero-section h2 {
+    font-size: 2rem; 
+    margin: 2rem 0 0.5rem 0;
+}
+.hero-section p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+.cards-section {
+    margin-top: 2rem;
+}
+.card {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* 4. Implementación de Flexbox (Mobile) */
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Mobile First: los elementos van en columna por defecto */
+    gap: 0.5rem; /* Espacio entre elementos */
+    padding: 1rem 0 0 0;
+}
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.nav-menu a:hover {
+    background-color: #212122;
+}
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Media Queries para Responsive Design */
+
+/* Estilos a partir de Tablet (768px) */
+@media (min-width: 768px) {
+    #header-principal {
+        display: flex;
+        justify-content: space-between; /* Logo a un extremo, menú al otro */
+        align-items: center; /* Centrado vertical */
+        padding: 1rem 2rem;
+        text-align: left;
+    }
+    .nav-menu ul {
+        flex-direction: row; /* Cambia a fila en pantallas grandes */
+        padding: 0;
+    }
+    .hero-section h1 {
+        font-size: 3rem; 
+    }
+    
+    /* Layout de las Tarjetas: de columna a fila */
+    .cards-section {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        gap: 2rem;
+    }
+
+    /* Definición de ancho flexible para que las 3 tarjetas se ajusten automáticamente */
+    .card {
+        flex: 1 1 30%; 
+        margin-bottom: 0;
+    }
+    
+}

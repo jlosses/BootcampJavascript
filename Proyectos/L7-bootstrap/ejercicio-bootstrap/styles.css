@@ -1,0 +1,35 @@
+.hero-section {
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+}
+
+.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+
+.list-unstyled li span {
+  font-size: 0.9rem;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo de Blog - Elementos HTML Básicos</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Blog Personal</h1>
+        <nav>
+            <a href="#inicio">Inicio</a> |
+            <a href="#articulos">Artículos</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>Introducción a los Elementos HTML5</h2>
+                <p><small>Publicado el <time datetime="2025-08-29">29 de agosto de 2025</time></small></p>
+            </header>
+
+            <p>HTML5 ofrece una amplia variedad de elementos para estructurar contenido. En este artículo exploraremos los <strong>elementos fundamentales</strong> que todo desarrollador debe conocer.</p>
+
+            <h3>¿Qué son los elementos HTML?</h3>
+            <p>Los elementos HTML son <em>bloques de construcción</em> que utilizamos para crear páginas web. Cada elemento tiene un <mark>propósito específico</mark> y ayuda a dar estructura y significado al contenido.</p>
+
+            <hr>
+
+            <h3>Código de Ejemplo</h3>
+            <p>Para crear un párrafo simple, utilizamos:</p>
+            <pre><code>&lt;p&gt;Este es un párrafo&lt;/p&gt;</code></pre>
+
+            <h3>Cita Inspiradora</h3>
+            <blockquote>
+                <p>El mejor momento para plantar un árbol fue hace 20 años. El segundo mejor momento es ahora.</p>
+                <footer>— <cite>Proverbio Chino</cite></footer>
+            </blockquote>
+
+            <div class="nota-importante">
+                <p><strong>Nota:</strong> Recuerda siempre usar elementos semánticos apropiados para mejorar la <span class="destacado">accesibilidad</span> de tu sitio web.</p>
+            </div>
+
+            <h3>Fórmulas y Expresiones</h3>
+            <p>La ecuación cuadrática es: ax<sup>2</sup> + bx + c = 0</p>
+            <p>La molécula de glucosa es C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+
+            <h3>Información de Contacto</h3>
+            <address>
+                <p><strong>Autor:</strong> Juan Pérez<br>
+                <a href="mailto:juan@ejemplo.com">juan@ejemplo.com</a><br>
+                <a href="tel:+1234567890">123-456-7890</a></p>
+            </address>
+        </article>
+
+        <!-- ✅ Buenas prácticas -->
+<div class="articulo-principal">
+    <p>Para aprender más sobre HTML5, consulta la 
+       <a href="https://developer.mozilla.org/es/docs/Web/HTML" 
+          title="Documentación oficial de HTML5 en MDN">
+          documentación oficial de Mozilla
+       </a>.
+    </p>
+    
+    <p><strong>Importante:</strong> Siempre valida tu código HTML usando 
+       <a href="https://validator.w3.org/" title="Validador HTML del W3C">
+          el validador del W3C
+       </a>.
+    </p>
+</div>
+
+<!-- ❌ Malas prácticas -->
+<div>
+    <p>Para aprender más <a href="https://developer.mozilla.org/es/docs/Web/HTML">haz clic aquí</a>.</p>
+    <br><br><br>
+    <p><b>Importante:</b> Valida tu código <a href="https://validator.w3.org/">aquí</a>.</p>
+</div>
+    </main>
+
+    <aside>
+        <h3>Artículos Relacionados</h3>
+        <p>También te puede interesar:</p>
+        <ul>
+            <li><a href="/css-basico">CSS Básico</a></li>
+            <li><a href="/javascript-intro">Introducción a JavaScript</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <hr>
+        <p><small>&copy; 2025 Mi Blog. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+</html>
